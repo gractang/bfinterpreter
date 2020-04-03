@@ -17,8 +17,6 @@
 #define SHOUT 42
 #define VALIDS "+-<>()*"
 
-#define FLAG "-d"
-
 #define OPEN_S "while (line[p]) {\n"
 #define CLOSE_S "}\n"
 #define SHOUT_S "putchar(line[p]);\n"
