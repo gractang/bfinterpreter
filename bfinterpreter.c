@@ -189,7 +189,7 @@ void to_C(char* code, char* file_name) {
 
 int main(int argc, char** argv) {
 	//start clock to keep track of time
-	clock_t begin = clock();
+// 	clock_t begin = clock();
 
 	char* file_name = argv[1];
 
@@ -202,9 +202,9 @@ int main(int argc, char** argv) {
 	free(bflol);
 
 	//find total time spent (in secs)
-	clock_t end = clock();
-	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-	printf("time spent: %f\ns", time_spent);
+// 	clock_t end = clock();
+// 	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+// 	printf("time spent: %f\n seconds", time_spent);
 
 	//compile new code
 	system("gcc bfcode.c -o bfcode");
