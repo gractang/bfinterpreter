@@ -147,7 +147,7 @@ void to_C(char* code, char* file_name) {
 	fputs("#include \"stdio.h\"\n#include \"stdint.h\"\n#include \"stdlib.h\"\n#include \"time.h\"\n", fp);
 	fputs("#define LINE_LENGTH 50000\n\n", fp);
 	fputs("int main(int argc, char** argv) {\n", fp);
-	fputs("clock_t begin = clock();\n", fp);
+// 	fputs("clock_t begin = clock();\n", fp);
 	fputs("char line[LINE_LENGTH];\n", fp);
 	fputs("int p = 0;\n", fp);
 
@@ -179,9 +179,9 @@ void to_C(char* code, char* file_name) {
 			default: break;
 		}
 	}
-	fputs("clock_t end = clock();\n", fp);
-	fputs("double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;\n", fp);
-	fputs("printf(\"time spent: %f\", time_spent);\n", fp);
+// 	fputs("clock_t end = clock();\n", fp);
+// 	fputs("double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;\n", fp);
+// 	fputs("printf(\"time spent: %f\", time_spent);\n", fp);
 	fputs("\nreturn 0;\n}", fp);
 
 	fclose(fp);
