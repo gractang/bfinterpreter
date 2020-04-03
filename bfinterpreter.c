@@ -206,7 +206,8 @@ int main(int argc, char** argv) {
 // 	double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
 // 	printf("time spent: %f\n seconds", time_spent);
 
-	//compile new code
+	//compile new code: the below should work on both platforms,
+	//no need to uncomment anything (hopefully)
 	system("gcc bfcode.c -o bfcode");
 	// system("bfcode"); //for windows
 
